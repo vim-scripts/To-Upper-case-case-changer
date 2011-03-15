@@ -1,0 +1,28 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3502
+
+
+ User manual: 
+ For use this script on VB.
+ First , add the following line to your vimrc:
+
+ let g:case_basic_source='IF;ELSE;THEN;DO;WHILE;FOR;CALL;'
+
+ Second , add the folloing line to your vimrc
+ We use .vb as the language extension name.
+
+ let g:case_changer_pat="*.vb"
+
+ Now , while your input if in your .vb file , I will change it to IF ...
+
+ Use this script for other language .
+ First , add source
+
+" let g:case_{&ft}_source='WHILE;UNTIL;UNLESS...'
+
+ let g:case_ruby_source='WHILE;UNTIL;UNLESS...'
+ let g:case_sql_source='SELECT;INSERT;VALUES...'
+
+ Second , add file extension:
+
+ let g:case_changer_pat="*.vb;*.rb;*.py"
+
